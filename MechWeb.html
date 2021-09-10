@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Task1:Pratik Rasne</title>
+    <link rel = "stylesheet" type="text/css" href="MechWeb.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="logo0.jpg" class="logo">
+            <div class="header-text">
+                <h1>MECHANICAL<br>WORLD</h1>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <h2>India's Best Learning Platform<br> for Mechanical Engineers</h2>
+                <br> 
+                <p>Learn skills with the help of online classes,<br>Courses, Virtual Internships, Live Virtual Sessions and Many More....!</p>
+                <button class="common-btn">Read More</button><br><br>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div> <br><br>
+            </div>
+            
+        </div>
+        <div class="slider">
+            <img src="left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="small1.jpg" class="active thumbnail">
+                <img src="small2.jpg" class="thumbnail">
+                <img src="small3.jpg" class="thumbnail">
+                <img src="small4.jpg" class="thumbnail">
+                <img src="small5.jpg" class="thumbnail">
+            </div>
+            <img src="right-arrow.png" id="next">
+        </div>
+    </div>
+    <script>
+
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var header = document.getElementById("header");
+
+        var backgroundImg = new Array(
+            "bg1.jpg",
+            "bg2.jpg",
+            "bg3.jpg",
+            "bg4.jpg",
+            "bg5.jpg",
+        );
+        i=0;
+        next.onclick = function(){
+            if(i<4){
+                header.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }  
+        prev.onclick = function(){
+            if(i>0){
+                header.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+        }
+    </script>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#internship">INTERNSHIPS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="menu.png" id="menubtn">
+
+    <!--About-->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="about.jpg">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <h2>We are the largest Community of Mechanical Engineers,<br> Professional Teachers and Students!</h2>
+                <br><br>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <h2>We are Providing Job Leading Mechanical Engineering Courses</h2>
+                <h3>-Learn from Experts<br>
+                    -Learn Cutting-Edge Skillsets<br>
+                    -Get Dedicated Doubt Clarification<br>
+                    -Become Certified<br>
+                    -Get the Job of your Dreams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--features-->
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="pic-1.png">
+                <h2>Learn Anywhere</h2>
+                <p>Switch between your computer,tablet or mobile</p>
+            </div>
+            <div class="feature-col">
+                <img src="pic-2.png">
+                <h2>Expert Teacher</h2>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="pic-3.png">
+                <h2>Unlimited Access</h2>
+                <p>Choose what you'd like to learn from our extensive subscription library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            
+            <br><br>
+            <button class="common-btn">Start Free Trial</button><br>
+            <br><br>
+            <br><br>
+            
+        </div>
+    </section>
+
+    <!--Courses-->
+
+    <section id="courses">
+        <div class="course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse our Job Leading Courses for Mechanical Engineers</h1>
+                    <div class="line">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                    <p>Our courses are crafted after consultation with industry experts and are designed to bridge the gap between academia and industry. The modules that you work have real-world applications and the projects that you work on as part of each module will be a project that is currently being conducted in an OEM, the only difference being the scale of the project.</p>
+                    <button class="common-btn">View All Courses</button>
+                    <br><br>
+                    <div class="line">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="FEA.jpg">......
+                <img src="CFD.jpg">......
+                <img src="CAD.jpg"><br><br>
+                <img src="MBD.jpg">......
+                <img src="MP.jpg">......
+                <img src="AUTO.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--internships-->
+    <section id="internship">
+        <div class="internship-left-col">
+            <img src="int1.jpg"> ..............
+            <img src="int2.jpg"><br><br><br><br>
+            <img src="int3.jpg">...............
+            <img src="int4.jpg">
+        </div>
+        <div class="internship-right-col">
+            <div class="internship-text">
+                <h1>Virtual Internship Program</h1><br> <br>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <h2>100% Online<br>Live Expert Sessions<br>Hands-on Experience<br>Get Certification</h2>
+                <br><br>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <br> <br>
+                <button class="common-btn">View All Internships</button>    
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Contact-->
+    
+    <section id="contact">
+        <div class="contact-row">
+            <br><br>
+            <div class="contact-left-col">
+                <h1>Sign up to join our<br>learning community</h1>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <input type="password" placeholder="Enter Password">
+                    <div class="btn-box">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <br><br>
+            <div class="contact-right-col">
+                <img src="contact.png">
+            </div>
+            <br><br>
+        </div>
+    </section>   
+    
+    <!--Footer-->
+
+    <section id="footer">
+        <div class="footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Top Individal Courses</h4>
+                        <small>MATLAB for Mechanical Engineers<br>
+                            Computational Combustion using Python<br>
+                            Simulink for Mechanical & Electrical Engineers<br>
+                            Structural Analysis using ANSYS Workbench<br>
+                            Plastic Design for Automotive Application</small><br><br><br>
+                    </div>
+                    
+                    
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Post Graduate Certification in Hybrid Electric <br>
+                            Vehicle Design & Analysis<br>
+                            Master's Certification Program in Hybrid Electric Vehicle Design and Analysis<br>
+                            CFD Engineer Master's Certification Program<br>
+                            Design Engineer Master's Certification Program<br>
+
+                        </small>
+                        
+                    </div>
+                    <div class="link-title">
+                        <h4>Our Company</h4>
+                        <small>News & Events<br>
+                            Blog<br>
+                            Industry Reports<br>
+                            Careers<br>
+                            Privacy Policy</small><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>support@mechanicalworld.com</small><br><br>
+                        <small>Copyright &copy; 2021 <br>Pratik Rasne</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="logo0.jpg">
+                        <button class="common-btn">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--social-icons---->
+
+    <div class="social-icons">
+        <img src="fblogo.png">
+        <img src="instalogo.png">
+        <img src="twittlogo.png">
+        <img src="linklogo.png">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        sidenav.style.right="-250px";
+        menubtn.onclick = function(){
+            if(sidenav.style.right=="-250px"){
+                sidenav.style.right="0";
+            }
+            else{
+                sidenav.style.right="-250px";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            
+        });
+    </script>
+</body>
+</html>
